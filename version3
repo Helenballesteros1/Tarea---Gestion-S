@@ -1,0 +1,13 @@
+<section>
+<h2>Versión 3 - Confirmación</h2>
+<form onsubmit="confirmarCita(event)">
+<input type="text" id="nombre3" placeholder="Nombre" required>
+<input type="date" id="fecha3" required>
+<input type="time" id="hora3" required>
+<select id="servicio3">
+<option>Uñas</option>
+<option>Cabello</option>
+</select>
+<button>Reservar</button>
+</form>
+</section>
