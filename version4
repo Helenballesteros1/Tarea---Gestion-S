@@ -1,0 +1,36 @@
+<section>
+<h2>Versión 4 - Avanzada</h2>
+<form onsubmit="guardarCita(event)">
+<input type="text" id="nombre4" placeholder="Nombre" required>
+<input type="email" id="correo4" placeholder="Correo" required>
+<input type="date" id="fecha4" required>
+<input type="time" id="hora4" required>
+<select id="servicio4">
+<option>Uñas</option>
+<option>Cabello</option>
+</select>
+<button>Reservar</button>
+</form>
+<ul id="listaCitas"></ul>
+</section>
+
+<script>
+function confirmarCita(e){
+ e.preventDefault();
+ let nombre = document.getElementById('nombre3').value;
+ alert('Cita confirmada para ' + nombre);
+}
+
+function guardarCita(e){
+ e.preventDefault();
+ let nombre = document.getElementById('nombre4').value;
+ let fecha = document.getElementById('fecha4').value;
+ let lista = document.getElementById('listaCitas');
+ let item = document.createElement('li');
+ item.textContent = nombre + ' - ' + fecha;
+ lista.appendChild(item);
+}
+</script>
+
+</body>
+</html>
