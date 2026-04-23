@@ -1,0 +1,12 @@
+<section>
+<h2>Versión 1 - Básica</h2>
+<form onsubmit="alert('Cita registrada'); return false;">
+<input type="text" placeholder="Nombre" required>
+<input type="date" required>
+<select>
+<option>Uñas</option>
+<option>Cabello</option>
+</select>
+<button>Reservar</button>
+</form>
+</section>
