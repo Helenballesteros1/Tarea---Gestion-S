@@ -1,0 +1,13 @@
+<section>
+<h2>Versión 2 - Con horario</h2>
+<form onsubmit="alert('Cita registrada con hora'); return false;">
+<input type="text" placeholder="Nombre" required>
+<input type="date" required>
+<input type="time" required>
+<select>
+<option>Uñas</option>
+<option>Cabello</option>
+</select>
+<button>Reservar</button>
+</form>
+</section>
